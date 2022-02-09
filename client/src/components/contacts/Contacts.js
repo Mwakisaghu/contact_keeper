@@ -4,6 +4,7 @@ import ContactContext from '../../context/contact/ContactContext';
 
 const Contacts = () => {
   const contactContext = useContext(ContactContext);
+  console.log({ Contacts });
 
   const { contacts } = contactContext;
   return (

@@ -26,12 +26,12 @@ export default (state, action) => {
     case SET_CURRENT:
       return {
         ...state,
-        contacts: action.payload,
+        current: action.payload,
       };
     case CLEAR_CURRENT:
       return {
         ...state,
-        contacts: null,
+        current: null,
       };
     default:
       return state;
