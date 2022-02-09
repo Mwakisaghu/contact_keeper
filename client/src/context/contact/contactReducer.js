@@ -23,6 +23,16 @@ export default (state, action) => {
           (contact) => contact.id !== action.payload
         ),
       };
+    case SET_CURRENT:
+      return {
+        ...state,
+        contacts: action.payload,
+      };
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        contacts: null,
+      };
     default:
       return state;
   }
